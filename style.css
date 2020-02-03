@@ -1,0 +1,305 @@
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #F2F2F2;
+}
+
+/* Font */
+@font-face {
+	font-family: "Butler-Bold";
+	src: url(./assets/font/Butler-Bold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: "Maven-Pro-Bold";
+	src: url(./assets/font/Maven-Pro-Bold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: "Maven-Pro-Regular";
+	src: url(./assets/font/Maven-Pro-Regular.woff2) format('woff2');
+}
+
+/* Butler Bold */
+.hero-title, .section2-title, .what-card-title, .section3-title, .sec3-card-title {
+	font-family: "Butler-Bold";
+}
+
+/* Maven Pro Regular */
+.nav-link, .hero-paragraph, .hero-btn, .what-card-text, .section3-subtitle, .sec3-card-text {
+	font-family: "Maven-Pro-Regular";
+}
+
+/* Navbar */
+
+.navbar {
+	height: 70px;
+	padding-left: 85px;
+	background: #FBFBFB;
+}
+
+.scrolled {
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+	padding-top: 0px;
+}
+
+.nav-link {
+	color: #000000 !important;
+	font-size: 20px;
+	line-height: 23px;
+	margin-right: 83px;
+}
+
+.nav-link:nth-child(4) {
+	margin-right: 65px;
+}
+
+.nav-link:hover {
+	font-family: "Maven-Pro-Bold";
+}
+
+/* Hero */
+
+.bg-oval {
+	position: absolute;
+	left: -0px;
+	top: -100px;
+	z-index: -100;
+}
+
+.bg-dots {
+	position: relative;
+	left: 1000px;
+	top: 720px;
+	mix-blend-mode: normal;
+	opacity: 0.7;
+}
+
+.hero {
+	margin-top: -160px;
+	position: relative;
+}
+
+.hero-text {
+	background-color: #FFFFFF;
+	width: 484px;
+	height: 400px;
+	padding: 50px 43px 40px 43px;
+}
+
+.hero-title {
+	width: 397px;
+	color: #000000;
+	font-size: 40px;
+	line-height: 60px;
+	text-align: left;
+}
+
+.hero-line {
+	margin-top: 36px;
+	margin-bottom: 30px;
+	height: 4px;
+	width: 110px;
+	background-color: #000000;
+	display: block;
+}
+
+.hero-paragraph {
+	width: 400px;
+	color: #000000;
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.hero-btn {
+	width: 240px;
+	height: 50px;
+	color: #FFFFFF;
+	background-color: #FF6A6A;
+	border-radius: 0px;
+	margin-top: 80px;
+	padding-top: 12px;
+	padding-left: 47px;
+	text-align: left;
+	position: relative;
+	transition: .4s;
+}
+
+.hero-btn:hover {
+	color: #FFFFFF;
+	opacity: 0.9;
+	transform: translate(0, -10px);
+	box-shadow: 0 3px 12px #FF6A6A;
+}
+
+.arrow {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding-top: 12px;
+	top: -1px;
+	right: -1px;
+	position: absolute;
+	background-color: #FF9C9C;
+}
+
+.arrow img {
+	width: 20px;
+	height: 20px;
+}
+
+.hero-banner {
+	margin-left: -40px;
+}
+
+/* Section 2 */
+
+.section2 {
+	margin-top: 188px;
+	position: relative;
+}
+
+.bg-dots2 {
+	position: absolute;
+	left: 0;
+	top: 1700px;
+	z-index: -10;
+}
+
+.bg-rectangle {
+	position: absolute;
+	top: 1140px;
+	right: 0;
+	z-index: -10;
+}
+
+.section2-title {
+	font-size: 40px;
+	color: #000000;
+	line-height: 70px;
+}
+
+.section2-line {
+	width: 120px;
+	height: 8px;
+	display: block;
+	margin-top: 20px;
+	background-color: #000000;
+}
+
+.section2-card-wrapper {
+	margin-top: 114px;
+}
+
+.what-card {
+	max-width: 246px;
+	margin-right: 10px;
+	background-color: transparent;
+	border: none !important;
+}
+
+.what-card-ic {
+	width: 72px;
+	height: 72px;
+	margin: 0px auto 26px 0px;
+}
+
+.what-card-title {
+	color: #000000;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 13px;
+}
+
+.what-card-text {
+	width: 220px;
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+	line-height: 22px;
+	letter-spacing: 1.4px;
+}
+
+/* Section 3 */
+
+.section3 {
+	margin-top: 226px;
+}
+
+.section3-banner {
+	position: absolute;
+	left: -82px;
+	top: 2000px;
+	z-index: -10;
+}
+
+.sec3-bg-dots {
+	position: absolute;
+	z-index: -10;
+	top: 2450px;
+	left: 450px;
+}
+
+.section3-header {
+	background-color: #FFFFFF;
+	width: 440px;
+	height: 280px;
+	padding: 32px 40px; 
+}
+
+.section3-title {
+	color: #000000;
+	font-size: 56px;
+	line-height: 64px;
+	margin-bottom: 56px;
+}
+
+.section3-subtitle {
+	color: #000000;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+}
+
+.sec3-card {
+	background-color: #FFFFFF;
+	padding: 30px 30px;
+	border: none;
+	height: 320px;
+	transition: .3s;
+}
+
+.sec3-card:hover {
+	transform: translate(0, -10px);
+	box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.1);
+}
+
+.sec3-card-ic {
+	width: 72px;
+	height: 72px;
+	margin-bottom: 26px;
+}
+
+.sec3-card-title {
+	color: #000000;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 2.1px;
+}
+
+.sec3-card-text {
+	color: #000000;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 1.4px;
+}
+
+.row2 {
+	margin-top: 36px;
+}
