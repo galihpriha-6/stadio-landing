@@ -26,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
             <a class="nav-item nav-link" href="#">Services</a>
             <a class="nav-item nav-link" href="#">Contact Us</a>
             <a class="nav-item nav-link" href="#">Blog</a>
@@ -196,7 +196,7 @@
         <span class="section5-line"></span>
       </div>
     </div>
-    <div class="container-fluid our-works">
+    <div class="container-fluid pl-0 pr-0">
       <div class="our-work-content row">
         <div class="col-md-4">
           <div class="card our-work-card border-0 mr-5">
@@ -264,6 +264,8 @@
 
     <!-- Section 6 -->
     <img src="./assets/section6/bg-oval6.svg" class="bg-oval6">
+    <img src="./assets/section6/bg-form.png" class="bg-form">
+    <img src="./assets/hero/bg-dots.svg" class="bg-dots6">
     <div class="container section6">
       <div class="form-wrapper justify-content-center">
         <div class="row">
@@ -271,14 +273,51 @@
             <h2 class="form-title">Let’s <br> Start a <br> Conversation</h2>
           </div>
           <div class="col-md-6">
-            
+            <form class="form-right">
+              <label for="name" class="form-label">
+                Full Name
+              </label>
+              <input type="text" id="name" placeholder="Setyono Dwi Utomo" class="form-input">
+              <label for="email" class="form-label">
+                Email Address
+              </label>
+              <input type="text" id="email" placeholder="setyonodwi.project@gmail.com" class="form-input">
+              <label for="company" class="form-label">
+                Company Name
+              </label>
+              <input type="text" id="company" placeholder="Agensip Creative Agency" class="form-input">
+              <label for="message" class="form-label">
+                Message
+              </label>
+              <textarea id="message" class="form-textarea" rows="5" cols="30" placeholder="Your Message Here.."></textarea>
+            </form>
+            <a href="#" class="btn btn-submit">Submit<span class="arrow"><img src="./assets/hero/arrow-right.svg"></a>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Section 6 End -->
 
+    <!-- Footer -->
+    <div class="container footer text-center">
+      <div class="footer-content m-auto">
+        <h2 class="social-media">OUR SOCIAL MEDIAS</h2>
+        <div class="social-media-icons d-flex justify-content-center">
+          <img src="./assets/footer/ic-facebook.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-twitter.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-instagram.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-linkedin.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-youtube.svg" class="ic-social mr-4">
+        </div>
+        <p class="copyright justify-content-center">
+          © Copyright 2018 | Super Glowing Ltd. trading as Stadio | Registered in England and Wales 08609434 | All rights reserved
+        </p>
+      </div>
+    </div>
+
+
+
+    <!-- Footer End -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -289,7 +328,7 @@
     <script type="text/javascript">
       new Glider(document.querySelector('.our-work-content'), {
         slidesToScroll: 2,
-        slidesToShow: 5,
+        slidesToShow: 5.2,
         draggable: true,
         dots: true,
         arrows: {
