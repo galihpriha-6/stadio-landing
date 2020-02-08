@@ -6,6 +6,7 @@ body {
 	background-color: #F2F2F2;
 	position: relative;
 	font-family: "Maven-Pro-Regular";
+	color: #000000;
 }
 
 /* Font */
@@ -38,7 +39,13 @@ body {
 .about-hero-title,
 .hero-card-title,
 .about-sec2-title,
-.about-sec2-card-title {
+.about-sec2-card-title,
+.about-sec3-title,
+.services-hero-title,
+.services-hero-card-title,
+.services-sec2-card-title,
+.contact-hero-title,
+.contact-hero-form-title {
 	font-family: "Butler-Bold";
 }
 
@@ -122,7 +129,6 @@ body {
 
 .hero-title {
 	width: 397px;
-	color: #000000;
 	font-size: 56px;
 	line-height: 64px;
 	text-align: left;
@@ -144,7 +150,6 @@ body {
 
 .hero-paragraph {
 	width: 400px;
-	color: #000000;
 	text-align: left;
 	font-size: 16px;
 	line-height: 24px;
@@ -216,7 +221,6 @@ body {
 
 .section2-title {
 	font-size: 56px;
-	color: #000000;
 	line-height: 70px;
 }
 
@@ -246,7 +250,6 @@ body {
 }
 
 .what-card-title {
-	color: #000000;
 	font-size: 24px;
 	line-height: 29px;
 	margin-bottom: 13px;
@@ -254,7 +257,6 @@ body {
 
 .what-card-text {
 	width: 220px;
-	color: #000000;
 	font-size: 16px;
 	text-align: left;
 	line-height: 22px;
@@ -290,14 +292,12 @@ body {
 }
 
 .section3-title {
-	color: #000000;
 	font-size: 40px;
 	line-height: 64px;
 	margin-bottom: 56px;
 }
 
 .section3-subtitle {
-	color: #000000;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 1.6px;
@@ -324,14 +324,12 @@ body {
 }
 
 .sec3-card-title {
-	color: #000000;
 	font-size: 24px;
 	line-height: 29px;
 	letter-spacing: 2.1px;
 }
 
 .sec3-card-text {
-	color: #000000;
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: 1.4px;
@@ -363,7 +361,6 @@ body {
 .section4-title {
 	font-size: 56px;
 	line-height: 64px;
-	color: #000000;
 	margin-bottom: 40px;
 }
 
@@ -419,7 +416,6 @@ body {
 .section5-title {
 	font-size: 56px;
 	line-height: 64px;
-	color: #000000;
 	display: inline;
 	margin-right: 100px;
 }
@@ -452,7 +448,6 @@ body {
 	line-height: 29px;
 	margin-top: 28px;
 	margin-bottom: 14px;
-	color: #000000;
 }
 
 .our-work-text {
@@ -460,7 +455,6 @@ body {
 	height: 96px;
 	font-size: 14px;
 	line-height: 24px;
-	color: #000000;
 }
 
 .btn-learn-more {
@@ -500,6 +494,7 @@ body {
 
 .section6 {
 	margin-top: 180px;
+	margin-bottom: 300px;
 }
 
 .bg-oval6 {
@@ -536,7 +531,6 @@ body {
 .form-title {
 	font-size: 56px;
 	line-height: 64px;
-	color: #000000;
 }
 
 .form-label {
@@ -595,14 +589,13 @@ body {
 /* Footer */
 
 .footer {
-	margin-top: 300px;
+	z-index: 1;
 }
 
 .social-media {
 	font-size: 36px;
 	line-height: 64px;
 	text-align: center;
-	color: #000000;
 }
 
 .social-media-icons {
@@ -624,7 +617,6 @@ body {
 .copyright {
 	font-size: 14px;
 	line-height: 16px;
-	color: #000000;
 	margin-top: 70px;
 	padding-bottom: 60px;
 }
@@ -635,7 +627,9 @@ body {
 
 
 
-/* About Page */
+/* ABOUT PAGE */
+
+/* About Hero */
 
 .about-hero-bg {
 	position: absolute;
@@ -656,7 +650,6 @@ body {
 }
 
 .about-hero-title {
-	color: #000000;
 	font-size: 56px;
 	line-height: 70px;
 	text-align: center;
@@ -664,7 +657,6 @@ body {
 }
 
 .about-hero-text {
-	color: #000000;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 1.6px;
@@ -705,7 +697,6 @@ body {
 	padding-bottom: 30px;
 	font-size: 24px;
 	line-height: 29px;
-	color: #000000;
 	letter-spacing: 2.1px;
 }
 
@@ -713,13 +704,13 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 1.6px;
-	color: #000000;
 }
 
 /* About Section 2 */
 
 .about-section2 {
 	margin-top: 342px;
+	min-height: 2370px;
 } 
 
 .bg-about-sec2-left {
@@ -732,6 +723,13 @@ body {
 	position: absolute;
 	left: 140px;
 	top: 2900px;
+	z-index: -10;
+}
+
+.bg-about-sec2-center-top {
+	position: absolute;
+	left: 400px;
+	top: 1730px;
 	z-index: -10;
 }
 
@@ -752,7 +750,6 @@ body {
 .about-sec2-title {
 	font-size: 56px;
 	line-height: 67px;
-	color: #000000;
 	display: inline-block;
 	margin-right: 53px;
 }
@@ -787,7 +784,6 @@ body {
 .about-sec2-card-title {
 	font-size: 24px;
 	line-height: 29px;
-	color: #000000;
 	margin-bottom: 10px;
 }
 
@@ -795,7 +791,6 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 1.4px;
-	color: #000000;
 }
 
 .sec2-card-icon-wrapper {
@@ -829,4 +824,355 @@ body {
 
 .sec2-card4 {
 	margin-top: 552px;
+}
+
+/* About Section 3 */
+
+.about-section3 {
+	margin-top: 140px;
+	margin-bottom: 200px;
+	min-height: 930px;
+}
+
+.about-sec3-title {
+	font-size: 56px;
+	line-height: 67px;
+}
+
+.about-sec3-text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+	max-width: 700px;
+	margin: 60px auto 112px ;
+}
+
+.about-sec3-img-wrapper {
+	position: relative;
+}
+
+.about-sec3-img1 {
+	position: absolute;
+	left: 0;
+}
+
+.about-sec3-img2 {
+	position: absolute;
+	left: 230px;
+	top: 300px;
+}
+
+.about-sec3-img3 {
+	position: absolute;
+	right: 0;
+	top: 100px;
+}
+
+/* SERVICES PAGE */
+
+/* Services Hero */
+
+.services-hero {
+	margin-top: 80px;
+}
+
+.bg-service-hero-right {
+	position: absolute;
+	right: 0;
+	z-index: -10;
+}
+
+.bg-services-hero-dots1 {
+	position: absolute;
+	right: 20px;
+	top: 180px;
+	z-index: -10;
+}
+
+.bg-services-hero-dots2 {
+	position: absolute;
+	left: 50px;
+	top: 850px;
+	z-index: -10;
+}
+
+.services-hero-header {
+	padding-left: 110px;
+}
+
+.services-hero-title {
+	font-size: 56px;
+	line-height: 70px;
+	width: 692px;
+}
+
+.services-hero-text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+	width: 600px;
+	padding-top: 30px;
+}
+
+.services-hero-slider {
+	padding-top: 340px;
+}
+
+.services-hero-card {
+	position: relative;
+	width: 670px;
+	border-radius: 0;
+	padding: 30px;
+}
+
+.card1 {
+	margin-left: 300px;
+}
+
+.services-hero-card-title {
+	font-size: 34px;
+	line-height: 41px;
+}
+
+.services-hero-card-text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+	width: 600px;
+	font-family: "Maven-Pro-Regular";
+}
+
+.services-hero-card-img {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	z-index: -10;
+	box-shadow: 0px 10px 60px rgba(1, 71, 177, 0.291185);
+}
+
+.arroww-wrapper {
+	padding-right: 330px;
+}
+
+.arroww-left,
+.arroww-right {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.arroww-left:hover,
+.arroww-right:hover {
+	transform: scale(1.2);
+}
+
+/* Services Section 2 */
+
+.services-section2 {
+	margin-top: 140px;
+	margin-bottom: 186px;
+}
+
+.services-sec2-card {
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.ic-card-wrapper {
+	width: 70px;
+}
+
+.services-sec2-card-title {
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 18px;
+}
+
+.services-sec2-card-text {
+	width: 650px;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+}
+
+.bg-footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+/* CONTACT PAGE */
+
+/* Contact Hero */
+
+.contact-hero {
+	margin-top: 80px;
+	min-height: 750px;
+}
+
+.bg-contact-hero {
+	position: absolute;
+	right: -50px;
+	top: 0;
+	z-index: -10;
+}
+
+.bg-contact-hero-dots {
+	position: absolute;
+	right: 35px;
+	top: 730px;
+	z-index: -10;
+}
+
+.contact-hero-header {
+	padding-left: 100px;
+}
+
+.contact-hero-title {
+	font-size: 56px;
+	line-height: 70px;
+	width: 600px;
+	margin-bottom: 20px;
+}
+
+.contact-hero-text {
+	width: 600px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+}
+
+.contact-hero-img-wrapper {
+	position: relative;
+}
+
+.contact-hero-img {
+	position: absolute;
+	left: 100px;
+}
+
+.contact-hero-bottom {
+	margin-top: 42px;
+}
+
+.contact-hero-form {
+	width: 542px;
+	padding: 40px;
+	background-color: #FFFFFF;
+}
+
+.contact-hero-form-title {
+	font-size: 56px;
+	line-height: 67px;
+	margin-bottom: 22px;
+}
+
+.contact-hero-form-text {
+	width: 446px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+}
+
+.form-subs {
+	margin-top: 34px;
+}
+
+.form-subs label {
+	margin-top: 15px;
+	display: block;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 1.4px;
+	color: #9B9B9B;
+}
+
+.form-subs input {
+	display: block;
+	width: 369px;
+	height: 56px;
+	padding: 20px;
+	margin-bottom: 73px;
+}
+
+.form-subs input::placeholder {
+	color: #cccccc;
+}
+
+.btn-subs {
+	width: 230px;
+	height: 60px;
+	color: #FFFFFF;
+	background-color: #FF6A6A;
+	border-radius: 0px;
+	padding-top: 17px;
+	padding-left: 47px;
+	text-align: left;
+	position: relative;
+	transition: .4s;
+}
+
+.btn-subs:hover {
+	color: #FFFFFF;
+	opacity: 0.9;
+	transform: translate(0, -10px);
+	box-shadow: 0 3px 12px #FF6A6A;
+}
+
+.arrow-btn-subs {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding-top: 17px;
+	top: -1px;
+	right: -1px;
+	position: absolute;
+	background-color: #FF9C9C;
+}
+
+/* Contact Section2 */
+
+.contact-section2 {
+	padding-top: 170px;
+	margin-bottom: 644px;
+}
+
+.bg-contact-sec2 {
+	position: absolute;
+	left: -50px;
+	top: 1000px;
+	z-index: -10;
+}
+
+.bg-contact-sec2-dots {
+	position: absolute;
+	right: 10px;
+	bottom: 930px;
+}
+
+.contact-maps-detail {
+	width: 840px;
+	height: 560px;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.047243);
+}
+
+
+/* BLOG PAGE */
+
+/* Blog Hero */
+
+.blog-hero {
+	margin-top: 80px;
+}
+
+.blog-category-wrapper {
+	max-width: 836px;
+	margin: 0px auto 96px;
+}
+
+.category {
+	font-size: 24px;
+	line-height: 28px;
 }

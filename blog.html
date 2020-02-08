@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Glider CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/libraries/glider.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Stadio Landing Page</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./assets/navbar/navbar-brand.svg" alt="Stadio">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="services.html">Services</a>
+            <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-item nav-link active" href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    
+    <!-- Hero -->
+    <div class="container blog-hero">
+      <div class="blog-category-wrapper d-flex justify-content-between">
+        <h2 class="category">All Article</h2>
+        <h2 class="category">Techonologi</h2>
+        <h2 class="category">Food</h2>
+        <h2 class="category">Automotif</h2>
+        <h2 class="category">AI</h2>
+      </div>
+      <div class="blog-hero-card-wrapper">
+        <h2 class="blog-hero-title">Featured Article</h2>
+        <div class="row blog-hero-cards">
+          <div class="col-md-4">
+            <div class="card blog-hero-card">
+              h2.blog-hero-title{}
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Hero End -->
+
+    <!-- Footer -->
+    <div class="container footer text-center">
+      <div class="footer-content m-auto">
+        <h2 class="social-media">OUR SOCIAL MEDIAS</h2>
+        <div class="social-media-icons d-flex justify-content-center">
+          <img src="./assets/footer/ic-facebook.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-twitter.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-instagram.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-linkedin.svg" class="ic-social mr-4">
+          <img src="./assets/footer/ic-youtube.svg" class="ic-social mr-4">
+        </div>
+        <p class="copyright justify-content-center">
+          © Copyright 2018 | Super Glowing Ltd. trading as Stadio | Registered in England and Wales 08609434 | All rights reserved
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Glider JS -->
+    <script src="./assets/libraries/glider.min.js"></script>
+    <script type="text/javascript">
+      new Glider(document.querySelector('.blog-hero-cards'), {
+        slidesToScroll: 1,
+        slidesToShow: 2.9,
+        draggable: true,
+        arrows: {
+          prev: '.arrow-leftt',
+          next: '.arrow-rightt'
+        }
+      });
+    </script>
+  </body>
+</html>
