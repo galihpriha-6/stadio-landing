@@ -1204,11 +1204,12 @@ body {
 }
 
 .glider-wrapper {
-	margin-left: 100px;
+	padding-left: 0px;
 }
 
 .blog-hero-card-wrapper {
 	margin-top: 30px;
+	padding-left: 90px;
 }
 
 .blog-hero-card {
