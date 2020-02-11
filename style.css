@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	overflow-x: hidden;
 }
 
@@ -26,12 +27,12 @@ body {
 }
 
 /* Butler Bold */
-.hero-title, 
-.section2-title, 
-.what-card-title, 
-.section3-title, 
-.sec3-card-title, 
-.section4-title, 
+.hero-title,
+.section2-title,
+.what-card-title,
+.section3-title,
+.sec3-card-title,
+.section4-title,
 .section5-title,
 .our-work-title,
 .form-title,
@@ -277,13 +278,6 @@ body {
 	height: 900px;
 }
 
-.section3-banner {
-	position: absolute;
-	left: -82px;
-	top: 1900px;
-	z-index: -10;
-}
-
 .sec3-bg-dots {
 	position: absolute;
 	z-index: -100;
@@ -295,7 +289,15 @@ body {
 	background-color: #FFFFFF;
 	width: 440px;
 	height: 280px;
-	padding: 32px 40px; 
+	padding: 32px 40px;
+	position: relative;
+}
+
+.section3-banner {
+	position: absolute;
+	right: 0;
+	top: 170px;
+	z-index: -10;
 }
 
 .section3-title {
@@ -320,7 +322,7 @@ body {
 }
 
 .sec3-card:hover {
-	transform: translate(0, -10px);
+	transform: translate(0, -10px) !important;
 	box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.1);
 }
 
@@ -514,8 +516,8 @@ body {
 
 .bg-form {
 	position: absolute;
-	left: -50px;
-	top: 5276px;
+	right: 508px;
+	bottom: 0;
 	z-index: 1;
 }
 
@@ -553,7 +555,7 @@ body {
 .form-input {
 	min-width: 369px;
 	height: 56px;
-	padding: 20px; 
+	padding: 20px;
 }
 
 .form-input::placeholder,
@@ -568,7 +570,7 @@ body {
 .form-textarea {
 	overflow: hidden;
 	padding: 20px;
-	text-align: left; 
+	text-align: left;
 	min-width: 369px;
 }
 
@@ -584,7 +586,7 @@ body {
 	padding-top: 17px;
 	padding-left: 53px;
 	text-align: left;
-	transition: .4s;	
+	transition: .4s;
 }
 
 .btn-submit:hover {
@@ -650,7 +652,7 @@ body {
 	position: absolute;
 	right: 20px;
 	top: 760px;
-	z-index: -10; 
+	z-index: -10;
 }
 
 .about-hero {
@@ -675,7 +677,7 @@ body {
 
 .hero-card-wrapper {
 	width: 760px;
-	margin: 142px auto 0px;
+	margin: 202px auto 0px;
 }
 
 .hero-card {
@@ -688,7 +690,7 @@ body {
 }
 
 .hero-card:hover {
-	transform: translate(0px, -15px);
+	transform: translate(0px, -15px) !important;
 	z-index: 1;
 	box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
 }
@@ -719,7 +721,7 @@ body {
 .about-section2 {
 	margin-top: 342px;
 	min-height: 2370px;
-} 
+}
 
 .bg-about-sec2-left {
 	position: absolute;
@@ -803,7 +805,7 @@ body {
 
 .sec2-card-icon-wrapper {
 	justify-content: center;
-	padding-top: 62px;	
+	padding-top: 62px;
 }
 
 .sec2-card-ic {
@@ -852,7 +854,7 @@ body {
 	line-height: 24px;
 	letter-spacing: 1.6px;
 	max-width: 700px;
-	margin: 60px auto 112px ;
+	margin: 60px auto 112px;
 }
 
 .about-sec3-img-wrapper {
@@ -923,18 +925,27 @@ body {
 }
 
 .services-hero-slider {
-	padding-top: 340px;
+	padding-top: 100px;
 }
 
 .services-hero-card {
 	position: relative;
-	width: 670px;
 	border-radius: 0;
+	min-height: 560px;
+	background-color: transparent;
+}
+
+.services-hero-card-body {
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 670px;
 	padding: 30px;
+	background-color: #FFFFFF;
 }
 
 .card1 {
-	margin-left: 300px;
+	margin-left: 200px;
 }
 
 .services-hero-card-title {
@@ -952,6 +963,7 @@ body {
 
 .services-hero-card-img {
 	position: absolute;
+	width: 840px;
 	bottom: 50px;
 	left: 0;
 	z-index: -10;
@@ -1144,7 +1156,7 @@ body {
 
 .contact-section2 {
 	padding-top: 170px;
-	margin-bottom: 644px;
+	margin-bottom: 444px;
 }
 
 .bg-contact-sec2 {
@@ -1193,9 +1205,25 @@ body {
 	margin: 0px auto 96px;
 }
 
-.category {
+.category-btn {
 	font-size: 24px;
 	line-height: 28px;
+	transition: .3s;
+	width: auto;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.category-btn:hover {
+	background-color: #d1d1d1;
+	border-radius: 20px;
+	color: #000000;
+}
+
+.category-active {
+	background-color: #d1d1d1;
+	border-radius: 20px;
+	color: #000000;
 }
 
 .blog-hero-title {
@@ -1235,6 +1263,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 2px;
+	font-family: "Maven-Pro-Regular";
 }
 
 .blog-hero-card-body {
@@ -1253,11 +1282,13 @@ body {
 	line-height: 18px;
 	color: #FFFFFF;
 	margin-bottom: 0;
+	font-family: "Maven-Pro-Regular";
 }
 
 .blog-hero-card-bottom {
 	margin-top: 30px;
 	display: flex;
+	font-family: "Maven-Pro-Regular";
 }
 
 .blog-hero-card-bot-text {
@@ -1270,7 +1301,7 @@ body {
 }
 
 .blog-hero-card-btn {
-	text-decoration: none; 
+	text-decoration: none;
 	display: inline-block;
 	color: #FF6A6A;
 	height: 20px;
@@ -1344,7 +1375,7 @@ body {
 }
 
 .blog-sec2-card-btn {
-	text-decoration: none; 
+	text-decoration: none;
 	display: inline-block;
 	color: #FF6A6A;
 	height: 20px;
