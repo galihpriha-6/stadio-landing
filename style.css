@@ -61,7 +61,7 @@ body {
 
 .navbar {
 	height: 70px;
-	padding-left: 85px;
+	padding: 15px 0px;
 	background: #FBFBFB;
 }
 
@@ -71,6 +71,7 @@ body {
 
 .navbar-brand {
 	padding-top: 0px;
+	padding-left: 85px;
 }
 
 .nav-link {
@@ -105,6 +106,10 @@ body {
 	border-radius: 2.5px;
 }
 
+.navbar-toggler-icon {
+	background-image: url('./assets/navbar/ic-navbar-toggler.svg') !important;
+}
+
 /* Hero */
 
 .bg-oval {
@@ -123,7 +128,7 @@ body {
 }
 
 .hero {
-	margin-top: -160px;
+	margin-top: -90px;
 	position: relative;
 	height: 100vh;
 }
@@ -131,8 +136,8 @@ body {
 .hero-text {
 	background-color: #FFFFFF;
 	width: 484px;
-	height: 400px;
-	padding: 50px 43px 40px 43px;
+	height: 417px;
+	padding: 40px 43px;
 }
 
 .hero-title {
@@ -203,7 +208,8 @@ body {
 .hero-banner {
 	position: absolute;
 	top: 148px;
-	left: 540px;
+	left: 600px;
+	box-shadow: 0px 90px 100px rgba(1, 71, 177, 0.291185);
 }
 
 /* Section 2 */
@@ -296,7 +302,7 @@ body {
 .section3-banner {
 	position: absolute;
 	right: 0;
-	top: 170px;
+	bottom: -580px;
 	z-index: -10;
 }
 
@@ -318,7 +324,8 @@ body {
 	border: none;
 	height: 320px;
 	margin-bottom: 36px;
-	transition: .3s;
+	transition: .3s !important;
+	z-index: 1;
 }
 
 .sec3-card:hover {
@@ -530,7 +537,7 @@ body {
 
 .form-wrapper {
 	background-color: #FFFFFF;
-	width: 960px;
+	max-width: 960px;
 	height: 680px;
 	margin: auto;
 	padding: 40px;
@@ -553,7 +560,7 @@ body {
 }
 
 .form-input {
-	min-width: 369px;
+	max-width: 369px;
 	height: 56px;
 	padding: 20px;
 }
@@ -571,7 +578,7 @@ body {
 	overflow: hidden;
 	padding: 20px;
 	text-align: left;
-	min-width: 369px;
+	max-width: 369px;
 }
 
 .btn-submit {
@@ -633,10 +640,6 @@ body {
 
 
 
-
-
-
-
 /* ABOUT PAGE */
 
 /* About Hero */
@@ -656,7 +659,7 @@ body {
 }
 
 .about-hero {
-	margin-top: 80px;
+	margin-top: 160px;
 }
 
 .about-hero-title {
@@ -883,7 +886,7 @@ body {
 /* Services Hero */
 
 .services-hero {
-	margin-top: 80px;
+	margin-top: 160px;
 }
 
 .bg-service-hero-right {
@@ -1028,7 +1031,7 @@ body {
 /* Contact Hero */
 
 .contact-hero {
-	margin-top: 80px;
+	margin-top: 160px;
 	min-height: 750px;
 }
 
@@ -1090,7 +1093,7 @@ body {
 }
 
 .contact-hero-form-text {
-	width: 446px;
+	max-width: 446px;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 1.6px;
@@ -1184,7 +1187,7 @@ body {
 /* Blog Hero */
 
 .blog-hero {
-	margin-top: 80px;
+	margin-top: 160px;
 }
 
 .bg-blog-hero-left {
@@ -1343,6 +1346,10 @@ body {
 .blog-sec2-card-img-mid,
 .blog-sec2-card-img-sm {
 	background-size: cover;
+}
+
+.card-small {
+	max-height: 124px;
 }
 
 .blog-sec2-card-big-title,
@@ -1531,4 +1538,135 @@ body {
 	right: -1px;
 	position: absolute;
 	background-color: #FF9C9C;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+	.hero-banner {
+		left: 530px;
+	}
+	.section3-banner {
+		right: 1px;
+	}
+	.services-hero-slider {
+		padding-top: 50px;
+	}
+}
+
+/* 991 Screen  */
+
+@media (max-width: 991px) {
+	.navbar-toggler {
+		margin-right: 50px;
+		border: none;
+	}
+	.navbar-toggler-icon {
+		
+	}
+	.navbar-nav {
+		margin-top: 14px;
+		background: #FBFBFB;
+		align-items: center; 
+		padding-top: 50px;
+		height: 100vh;
+	}
+	.nav-link {
+		padding-bottom: 60px;
+		margin-right: 0px;
+	}
+	.nav-link:nth-child(4) {
+		margin-right: 0px;
+	}
+	.hero-banner {
+		left: 620px; 
+	}
+	.bg-dots {
+		left: 700px;
+	}
+	.bg-rectangle {
+		top: 1440px;
+	}
+	.section3-banner {
+		bottom: 0;
+		display: none;
+	}
+	.section3-banner-m {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 150px;
+		z-index: -10;
+	}
+	.section3-header {
+		width: 360px;
+		height: 233px;
+		padding: 26px 34px;
+		margin-left: 150px;
+	}
+	.section3-title {
+		margin-bottom: 16px;
+	}
+	.sec3-card-wrapper {
+		margin-top: 120px;
+	}
+	.toyota {
+	margin-left: 50px;
+	}
+
+	.jack {
+		margin-right: 50px;
+	}
+	.section6 {
+		margin-top: 0px;
+	}
+	.form-title {
+		font-size: 52px;
+	}
+	.form-right {
+		padding-left: 15px;
+	}
+	.form-input {
+		width: 250px;
+	}
+	.form-textarea {
+		width: 260px;
+	}
+	.bg-form {
+		right: 400px;
+	}
+	.services-hero-header {
+		padding-left: 10px;
+	}
+	.arroww-wrapper {
+		padding-right: 130px;
+	}
+	.services-hero-slider {
+		padding-top: 50px;
+	}
+	.card1 {
+		margin-left: 140px;
+	}
+	.contact-hero-header {
+		padding-left: 0px;
+	}
+	.contact-hero-img {
+		position: absolute;
+		left: 0px;
+	}
+	.form-subs input {
+		width: 300px;
+		padding: 10px;
+	}
+	.contact-section2 {
+		margin-bottom: 244px;
+	}
+	.contact-maps-detail {
+		width: 640px;
+		height: 360px;
+		box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.047243);
+	}
 }
