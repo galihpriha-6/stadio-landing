@@ -50,10 +50,8 @@
         <div class="hero-text text-center">
           <h1 class="hero-title d-none d-md-block">We Love to Improve <br> Radically</h1>
           <h1 class="hero-title d-block d-md-none">We Love to <br> Improve Radically</h1>
-          <div class="hero-banner-mobile justify-content-center">
-            <!-- Hero Banner Mobile -->
-            <img src="./assets/hero/hero-banner.png" class="hero-banner-m d-block d-sm-none">
-          </div>
+          <!-- Hero Banner Mobile -->
+          <img src="./assets/hero/hero-banner.png" class="hero-banner-m">
           <span class="hero-line"></span>
           <p class="hero-paragraph">We are Stadio, a UK based CRM & Marketing Cloud lab that understands how to make
             automated marketing intelligent, responsive and fully GDPR compliant.</p>
@@ -64,7 +62,7 @@
     </div>
   </div>
   <!-- Hero Banner Desktop -->
-  <img src="./assets/hero/hero-banner.png" class="hero-banner d-none d-sm-block">
+  <img src="./assets/hero/hero-banner.png" class="hero-banner">
   <!-- Hero End -->
 
   <!-- Section 2 -->
@@ -103,7 +101,7 @@
           <div class="col-xs-12 col-sm-12 col-lg-4">
             <div class="what-card card" data-aos="fade-up" data-aos-duration="800"
               data-aos-anchor-placement="top-bottom">
-              <img src="./assets/section2/ic-track.svg" class="what-card-ic" alt="track-card">
+              <img src="./assets/section2/ic-cloud.svg" class="what-card-ic" alt="track-card">
               <div class="card-body pl-0 pt-0">
                 <h2 class="what-card-title">Mktg cloud experts</h2>
                 <p class="what-card-text">We specialise in marketing clouds like Salesforce (SFMC), Oracle MC, Adobe MC,
@@ -132,7 +130,7 @@
       </div>
       <div class="col-lg-7">
         <div class="row sec3-card-wrapper">
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="sec3-card card" data-aos="zoom-out-down" data-aos-duration="800"
               data-aos-anchor-placement="top-bottom">
               <img src="./assets/section3/ic-email.svg" class="sec3-card-ic" alt="sophisticated-email-card">
@@ -143,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="sec3-card card" data-aos="zoom-out-down" data-aos-duration="800"
               data-aos-anchor-placement="top-bottom">
               <img src="./assets/section3/ic-person.svg" class="sec3-card-ic" alt="sophisticated-email-card">
@@ -154,7 +152,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="sec3-card card" data-aos="zoom-out-up" data-aos-duration="800"
               data-aos-anchor-placement="top-bottom">
               <img src="./assets/section3/ic-multichannel.svg" class="sec3-card-ic" alt="sophisticated-email-card">
@@ -165,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-12 col-md-6">
             <div class="sec3-card card" data-aos="zoom-out-up" data-aos-duration="800"
               data-aos-anchor-placement="top-bottom">
               <img src="./assets/section3/ic-email.svg" class="sec3-card-ic" alt="sophisticated-email-card">
@@ -187,48 +185,38 @@
   <img src="./assets/section4/bg-4-left.svg" class="bg-4-left">
   <img src="./assets/section4/bg-4-right.svg" class="bg-4-right">
   <div class="container section4">
-    <div class="section4-heading text-center">
+    <div class="section4-heading">
       <h2 class="section4-title">Our Client</h2>
     </div>
-    <div class="our-client row text-center">
-      <div class="col-4 client-img p-0" data-aos="fade-up" data-aos-duration="800"
-        data-aos-anchor-placement="top-bottom">
-        <img src="./assets/section4/client-1.svg">
-      </div>
-      <div class="col-4 client-img p-0" data-aos="fade-up" data-aos-duration="800"
-        data-aos-anchor-placement="top-bottom">
-        <img src="./assets/section4/client-2.svg">
-      </div>
-      <div class="col-4 client-img p-0" data-aos="fade-up" data-aos-duration="800"
-        data-aos-anchor-placement="top-bottom">
-        <img src="./assets/section4/client-3.svg">
-      </div>
-      <div class="col-6 client-img p-0" data-aos="fade-up" data-aos-duration="800"
-        data-aos-anchor-placement="top-bottom">
-        <img src="./assets/section4/client-4.svg" class="toyota">
-      </div>
-      <div class="col-6 client-img p-0" data-aos="fade-up" data-aos-duration="800"
-        data-aos-anchor-placement="top-bottom">
-        <img src="./assets/section4/client-5.svg" class="jack">
-      </div>
+    <div class="our-client">
+      <img src="./assets/section4/client-1.svg" class="client-img">
+      <img src="./assets/section4/client-2.svg" class="client-img">
+      <img src="./assets/section4/client-3.svg" class="client-img">
+    </div>
+    <div class="our-client-2">
+      <img src="./assets/section4/client-4.svg" class=" client-img">
+      <img src="./assets/section4/client-5.svg" class=" client-img">
     </div>
   </div>
   <!-- Section 4 End -->
 
   <!-- Section 5 -->
-  <img src="./assets/hero/bg-dots.svg" class="bg-dots5">
-  <img src="./assets/hero/bg-dots.svg" class="bg-dots5-2">
   <div class="container section5">
     <div class="section5-heading">
       <h2 class="section5-title">Our Work</h2>
       <span class="section5-line"></span>
     </div>
+    <!-- <div class="sec5-arrow-wrapper ml-auto">
+      <img src="./assets/section5/arrow-left.svg" class="sec5-arrow-left">
+      <img src="./assets/section5/arrow-right.svg" class="sec5-arrow-right">
+    </div> -->
   </div>
   <div class="container-fluid pl-0 pr-0">
     <div class="our-work-content row">
       <div class="col-md-4">
         <div class="card our-work-card border-0 mr-5" data-aos="fade-left" data-aos-duration="800"
           data-aos-anchor-placement="top-bottom">
+          <img src="./assets/hero/bg-dots.svg" class="bg-dots5-2">
           <img src="./assets/section5/our-work1.png" class="card-img-top" alt="Our Work1.png">
           <div class="card-body pt-0">
             <h5 class="our-work-title">Just Eat</h5>
@@ -242,6 +230,7 @@
       <div class="col-md-4">
         <div class="card our-work-card border-0 mr-5" data-aos="fade-left" data-aos-duration="800"
           data-aos-anchor-placement="top-bottom">
+          <img src="./assets/hero/bg-dots.svg" class="bg-dots5">
           <img src="./assets/section5/our-work2.png" class="card-img-top" alt="Our Work2.png">
           <div class="card-body pt-0">
             <h5 class="our-work-title">Toyota</h5>
@@ -393,21 +382,52 @@
       slidesToShow: 5.2,
       draggable: true,
       arrows: {
-        prev: '.arrow-left',
-        next: '.arrow-right'
+        prev: '.sec5-arrow-left',
+        next: '.sec5-arrow-right'
       },
       responsive: [
         {
-          // screens greater than >= 775px
-          breakpoint: 900,
+          // screens greater than >= 300px
+          breakpoint: 300,
           settings: {
-            // Set to `auto` and provide item width to adjust to viewport
-            slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToShow: 1.1,
+            slidesToScroll: 1,
             duration: 0.25
           }
         },{
-          // screens greater than >= 1024px
+          // screens greater than >= 500px
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1.1,
+            slidesToScroll: 1,
+            duration: 0.25
+          }
+        },{
+          // screens greater than >= 700px
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1.4,
+            slidesToScroll: 1,
+            duration: 0.25
+          }
+        },{
+          // screens greater than >= 800px
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3.4,
+            slidesToScroll: 1,
+            duration: 0.25
+          }
+        },{
+          // screens greater than >= 900px
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1.5,
+            duration: 0.25
+          }
+        },{
+          // screens greater than >= 1100px
           breakpoint: 1100,
           settings: {
             slidesToShow: 4.6,

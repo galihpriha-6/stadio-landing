@@ -35,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="about.html">About</a>
-          <a class="nav-item nav-link active" href="services.html">Services</a>
+          <a class="nav-item nav-link nav-active" href="services.html">Services</a>
           <a class="nav-item nav-link" href="contact.html">Contact Us</a>
           <a class="nav-item nav-link" href="blog.html">Blog</a>
         </div>
@@ -65,7 +65,7 @@
       <img src="./assets/services-page/hero/ic-arroww-left.svg" class="arroww-left">
       <img src="./assets/services-page/hero/ic-arroww-right.svg" class="arroww-right">
     </div>
-    <div class="row services-hero-slider">
+    <!-- <div class="row services-hero-slider">
       <div class="col-sm-4 card1">
         <div class="card services-hero-card border-0 p-0" data-aos="fade-right" data-aos-duration="1200">
           <img src="./assets/services-page/hero/services-hero-img1.png" class="services-hero-card-img">
@@ -99,6 +99,60 @@
               The Services we offer and Use Cases. We have done some mighty, meaty and downright awesome work for our
               clients so we will trumpet our success.
             </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="services-hero-slider-owl owl-carousel">
+          <div class="item">
+            <div class="card services-hero-card services-hero-card-owl border-0 p-0" >
+              <img src="./assets/services-page/hero/services-hero-img1.png" class="services-hero-card-img">
+              <div class="services-hero-card-body">
+                <h2 class="services-hero-card-title">Make working with Eurocodes simple</h2>
+                <p class="services-hero-card-text">
+                  The Services we offer and Use Cases. We have done some mighty, meaty and downright awesome work for our
+                  clients so we will trumpet our success.
+                </p>
+              </div>
+            </div> 
+          </div>
+          <div class="item">
+            <div class="card services-hero-card services-hero-card-owl border-0 p-0" >
+              <img src="./assets/services-page/hero/services-hero-img1.png" class="services-hero-card-img">
+              <div class="services-hero-card-body">
+                <h2 class="services-hero-card-title">Make working with Eurocodes simple</h2>
+                <p class="services-hero-card-text">
+                  The Services we offer and Use Cases. We have done some mighty, meaty and downright awesome work for our
+                  clients so we will trumpet our success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card services-hero-card services-hero-card-owl border-0 p-0" >
+              <img src="./assets/services-page/hero/services-hero-img1.png" class="services-hero-card-img">
+              <div class="services-hero-card-body">
+                <h2 class="services-hero-card-title">Make working with Eurocodes simple</h2>
+                <p class="services-hero-card-text">
+                  The Services we offer and Use Cases. We have done some mighty, meaty and downright awesome work for our
+                  clients so we will trumpet our success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card services-hero-card services-hero-card-owl border-0 p-0" >
+              <img src="./assets/services-page/hero/services-hero-img1.png" class="services-hero-card-img">
+              <div class="services-hero-card-body">
+                <h2 class="services-hero-card-title">Make working with Eurocodes simple</h2>
+                <p class="services-hero-card-text">
+                  The Services we offer and Use Cases. We have done some mighty, meaty and downright awesome work for our
+                  clients so we will trumpet our success.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,7 +294,7 @@
   <!-- <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script> -->
   <!-- Glider JS -->
-  <script src="./assets/libraries/glider.min.js"></script>
+  <!-- <script src="./assets/libraries/glider.min.js"></script>
   <script type="text/javascript">
     new Glider(document.querySelector('.services-hero-slider'), {
       slidesToScroll: 1.1,
@@ -271,19 +325,35 @@
         }
       ]
     });
-  </script>
+  </script> -->
   <!-- Owl Carousel -->
-  <!-- <script type="text/javascript" src="./assets/libraries/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./assets/libraries/owl.carousel.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      $('.services-hero-slider').owlCarousel({
+      var owl = $('.services-hero-slider-owl');
+
+      owl.owlCarousel({
         rtl: true,
-        nav: false,
+        loop: false,
+        items:1,
+        stagePadding: 200,
+        center:true,
+        margin:120,
+        // margin: 10,
+        // autoplay: true,
+        // nav:true,
+        // navText: [$('.arroww-left'),$('.arroww-right')],
         dots: false
       });
+      $('.arroww-left').click(function(){
+        owl.trigger('next.owl.carousel');
+      })
+      $('.arroww-right').click(function(){
+        owl.trigger('prev.owl.carousel');
+      })
     });
-  </script> -->
-  <!-- AOS JS -->
+  </script>
+  AOS JS
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
