@@ -65,7 +65,7 @@
       <img src="./assets/services-page/hero/ic-arroww-left.svg" class="arroww-left">
       <img src="./assets/services-page/hero/ic-arroww-right.svg" class="arroww-right">
     </div>
-    <div class="row">
+    <div class="row services-hero-row">
       <div class="col-md-12">
         <div class="services-hero-slider-owl owl-carousel">
           <div class="item">
@@ -285,10 +285,10 @@
       owl.owlCarousel({
         rtl: true,
         loop: false,
-        items:1,
+        items: 1,
         stagePadding: 200,
-        center:true,
-        margin:120,
+        center: true,
+        margin: 120,
         // margin: 10,
         // autoplay: true,
         // nav:true,
@@ -307,6 +307,11 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <!-- Retina JS -->
+  <script src="./assets/libraries/retina.min.js"></script>
+  <script>
+    retinajs();
   </script>
 </body>
 
