@@ -133,7 +133,7 @@
               <div class="col-2 ic-card-wrapper d-flex justify-content-center align-items-baseline pt-4">
                 <img src="./assets/services-page/section2/ic-card1.svg" class="ic-card1">
               </div>
-              <div class="col-10">
+              <div class="col-10 services-sec2-card-right">
                 <div class="card-body services-sec2-card-body">
                   <h2 class="services-sec2-card-title">Maintain Integrity</h2>
                   <p class="services-sec2-card-text">We offer the full spectrum of services to help organizations work better. Everything from creating standards of excellence to training your people to work in more effective ways, assessing how you’re doing, and helping you perform even better in future. Very few others do this, and none have been doing it as long as we have.</p>
@@ -150,7 +150,7 @@
               <div class="col-2 ic-card-wrapper d-flex justify-content-center align-items-baseline pt-4">
                 <img src="./assets/services-page/section2/ic-card2.svg" class="ic-card2">
               </div>
-              <div class="col-10">
+              <div class="col-10 services-sec2-card-right">
                 <div class="card-body services-sec2-card-body">
                   <h2 class="services-sec2-card-title">Always Improving</h2>
                   <p class="services-sec2-card-text">Whether it’s creating a marketing plan, brand content, a media schedule or a creative brief, we will introduce strategy into your marketing. This will ensure there is both the structure and process in place to meet the agreed goals and aims of the marketing project.</p>
@@ -168,7 +168,7 @@
               <div class="col-2 ic-card-wrapper d-flex justify-content-center align-items-baseline pt-4">
                 <img src="./assets/services-page/section2/ic-card3.svg" class="ic-card3">
               </div>
-              <div class="col-10">
+              <div class="col-10 services-sec2-card-right">
                 <div class="card-body services-sec2-card-body">
                   <h2 class="services-sec2-card-title">Full Service</h2>
                   <p class="services-sec2-card-text">You want a holistic brand that understands its place in the market. A brand that confidently defines its core beliefs and adheres to a unified visual identity. Creative agencies offer a valuable outside perspective. We help build brands from scratch, or reassess existing brands, ensuring they align with their mission and market space. </p>
@@ -186,7 +186,7 @@
               <div class="col-2 ic-card-wrapper d-flex justify-content-center align-items-baseline pt-4">
                 <img src="./assets/services-page/section2/ic-card4.svg" class="ic-card4">
               </div>
-              <div class="col-10">
+              <div class="col-10 services-sec2-card-right">
                 <div class="card-body services-sec2-card-body">
                   <h2 class="services-sec2-card-title">Creative Production</h2>
                   <p class="services-sec2-card-text">The bread and butter of a creative agency is creative production. Every creative piece of collateral and each campaign, they all start with branding. A properly branded organization sets the foundation for the strategic planning and execution of a campaign with the proper collateral driving the engagement.</p>
@@ -198,7 +198,6 @@
       </div>
     </div>
   </div>
-
   <!-- Section 2 End -->
 
   <!-- Footer -->
@@ -293,7 +292,83 @@
         // autoplay: true,
         // nav:true,
         // navText: [$('.arroww-left'),$('.arroww-right')],
-        dots: false
+        dots: false,
+          responsive:{
+          0:{
+              rtl: false,
+              loop: false,
+              items: 1,
+              stagePadding: 30,
+              center: true,
+              margin: 120,
+              dots: false,
+              mouseDrag: true
+          },
+          400:{
+              rtl: false,
+              loop: false,
+              items: 1,
+              stagePadding: 50,
+              center: true,
+              margin: 120,
+              dots: false,
+              mouseDrag: true
+          },
+          600:{
+              rtl: false,
+              loop: false,
+              items: 1,
+              stagePadding: 100,
+              center: true,
+              margin: 120,
+              dots: false
+          },
+          640:{
+              rtl: true,
+              loop: false,
+              items: 1,
+              stagePadding: 100,
+              center: true,
+              margin: 120,
+              dots: false
+          },
+          680:{
+              rtl: true,
+              loop: false,
+              items: 1,
+              stagePadding: 120,
+              center: true,
+              margin: 120,
+              dots: false
+          },
+          720:{
+              rtl: true,
+              loop: false,
+              items: 1,
+              stagePadding: 140,
+              center: true,
+              margin: 120,
+              dots: false
+          },
+          768:{
+              rtl: true,
+              loop: false,
+              items: 1,
+              stagePadding: 160,
+              center: true,
+              margin: 120,
+              dots: false
+          },
+          900:{
+              rtl: true,
+              loop: false,
+              items: 1,
+              stagePadding: 200,
+              center: true,
+              margin: 120,
+              dots: false
+          }
+        }
       });
       $('.arroww-left').click(function(){
         owl.trigger('next.owl.carousel');
@@ -303,7 +378,7 @@
       })
     });
   </script>
-  AOS JS
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

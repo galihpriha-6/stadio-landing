@@ -1987,9 +1987,11 @@ body {
 	}
 	.arroww-wrapper {
 		padding-right: 200px;
+		z-index: 1;
 	}
 	.services-hero-slider-owl {
 		margin-top: -60px;
+		z-index: -1;
 	}
 	.services-hero-card-title {
 		font-size: 24px;
@@ -1998,9 +2000,11 @@ body {
 		width: 560px;
 	}
 	.owl-carousel .owl-item img {
-		width: 400px;
+		width: 600px;
 	}
-
+	.services-hero-card-body {
+		padding: 20px;
+	}
 
 	/* Contact Page */
 
@@ -2047,6 +2051,12 @@ body {
 	.toyota {
 		margin-left: 100px;
 	}
+
+	/* Services Page */
+	.bg-services-hero-dots2 {
+		left: 10px;
+		top: 830px;
+	}
 }
 
 @media (max-width: 850px) {
@@ -2067,6 +2077,16 @@ body {
 	}
 	.about-hero-bg-sm {
 		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.owl-carousel .owl-item img {
+		width: 550px;
+	}
+	.services-hero-card-body {
+		padding: 20px;
+		width: 520px;
 	}
 }
 
@@ -2190,6 +2210,19 @@ body {
 		right: -20px;
 	}
 
+	/* Services Page */
+
+	.services-hero-title {
+		max-width: 543px;
+	}
+	.bg-services-hero-dots1,
+	.bg-service-hero-right {
+		display: none;
+	}
+	.arroww-wrapper {
+		padding-right: 140px;
+	}
+
 	/* Contact Page */
 
 	.contact-hero-title,
@@ -2279,6 +2312,16 @@ body {
 @media (max-width: 699px) {
 	.blog-hero-card-wrapper {
 		padding-left: 60px;
+	}
+}
+
+@media (max-width: 640px) {
+	.owl-carousel .owl-item img {
+		width: 500px;
+	}
+	.services-hero-card-body {
+		padding: 20px;
+		width: 480px;
 	}
 }
 
@@ -2474,6 +2517,33 @@ body {
 		right: 50px;
 	}
 
+	/* Services Page */ 
+
+	.services-hero {
+		margin-top: 120px;
+	}
+	.services-hero-title {
+		font-size: 36px;
+		width: 315px;
+		line-height: 50px;
+		text-align: center;
+		margin: 1rem auto;
+	}
+	.services-hero-text {
+		font-size: 14px;
+		text-align: center;
+	}
+	.arroww-wrapper {
+		padding-right: 0px;
+		justify-content: center !important;
+	}
+	.services-hero-slider-owl {
+		margin-top: -120px;
+	}
+	.bg-footer {
+		display: none;
+	}
+
 	/* Contact Page */
 
 	.contact-hero-text {
@@ -2552,6 +2622,19 @@ body {
 	}
 }
 
+@media (max-width: 550px) {
+	.services-hero-slider-owl {
+		margin-top: 0;
+	}
+	.owl-carousel .owl-item img {
+		width: 450px;
+		bottom: 200px;
+	}
+	.services-hero-card-body {
+		width: 450px;
+	}
+}
+
 @media (max-width: 500px) {
 
 	/* About Page */
@@ -2568,6 +2651,40 @@ body {
 	.about-sec3-img3 {
 		width: 220px;
 	}
+
+	/* Services Page */
+
+	.services-sec2-card-title {
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.services-sec2-card-text {
+		font-size: 12px;
+	}
+	.bg-services-hero-dots2 {
+		display: none;
+	}
+	.owl-carousel .owl-item img,
+	.services-hero-card-body {
+		width: 400px;
+	}
+	.ic-card-wrapper {
+		padding-right: 0;
+	}
+	.services-sec2-card-right {
+		padding-left: 0;
+	}
+	.services-sec2-card-body {
+		padding-left: 10px;
+	}
+	.ic-card-wrapper img {
+		width: 38px;
+		height: 38px;
+	}
+	.services-section2 {
+		margin-top: 120px;
+	}
+
 	/* Contact Page */
 
 	.contact-hero-img {
@@ -2585,6 +2702,13 @@ body {
 	}
 	.blog-sec3-dots {
 		display: none;
+	}
+} 
+
+@media (max-width: 480px) {
+	.owl-carousel .owl-item img, 
+	.services-hero-card-body {
+		width: 380px;
 	}
 }
 
@@ -2716,6 +2840,20 @@ body {
 		top: 20px;
 	}
 
+	/* Services Page */
+	
+	.services-hero-slider-owl {
+		margin-top: -20px;
+	}
+	.owl-carousel .owl-item img {
+		bottom: 250px;
+		width: 340px;
+	}
+	.services-hero-card-body {
+		padding: 20px 25px;
+		width: 340px;
+	}
+
 	/* Contact Page */
 
 	.contact-hero-img {
@@ -2742,6 +2880,20 @@ body {
 }
 
 @media (max-width: 400px) {
+
+	/* Services Page */
+
+	.services-hero-slider-owl {
+		margin-top: -40px;
+	}
+	.owl-carousel .owl-item img {
+		width: 300px;
+	}
+	.services-hero-card-body {
+		width: 300px;
+	}
+
+	/* Contact Page */
 	.contact-hero-title,
 	.contact-hero-form-title,
 	.contact-sec2-title {
@@ -2945,6 +3097,25 @@ body {
 }
 
 @media (max-width: 340px) {
+
+	/* Services Page */ 
+
+	.services-hero-title {
+		width: 260px;
+	}
+	.services-hero-slider-owl {
+		margin-top: 0px;
+	}
+	.owl-carousel .owl-item img {
+		width: 280px;
+		bottom: 290px;
+	}
+	.services-hero-card-body {
+		width: 280px;
+	}
+
+	/* Contact Page */
+
 	.contact-hero-title,
 	.contact-hero-img,
 	.contact-hero-form-text,
@@ -2971,7 +3142,16 @@ body {
 		margin-right: 0px;
 	}
 
+	/* Services Page */ 
+
+	.services-hero-slider-owl {
+		margin-top: 50px;
+	}
+	.owl-carousel .owl-item img {
+		width: 260px;
+		bottom: 380px;
+	}
+	.services-hero-card-body {
+		width: 260px;
+	}
 }
-
-/* Retina JS */
-
